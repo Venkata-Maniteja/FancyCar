@@ -1,0 +1,23 @@
+[
+    {
+        "id" : "1",
+        "available" : "In Dealership"
+    },
+    {
+        "id" : "2",
+        "available" : "Out of Stock"
+    },
+    {
+        "id" : "3",
+        "available" : "Unavailable"
+    },
+    {
+        "id" : "4",
+        "available" : "In Dealership"
+    },
+    {
+        "id" : "5",
+        "available" : "Out of Stock"
+    }
+    
+]

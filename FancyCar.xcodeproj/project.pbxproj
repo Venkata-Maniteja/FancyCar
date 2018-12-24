@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B01D48D21CD309400635A91 /* RLMCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D48C21CD309400635A91 /* RLMCar.swift */; };
+		0B01D48F21CD3C4D00635A91 /* FancyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D48E21CD3C4D00635A91 /* FancyAlertController.swift */; };
+		0B01D49121CD5E3500635A91 /* splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0B01D49021CD5E3500635A91 /* splash.gif */; };
+		0B01D49521CD67E100635A91 /* FancyReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D49421CD67E100635A91 /* FancyReachability.swift */; };
+		0B01D49721CD941300635A91 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D49621CD941300635A91 /* SettingsViewController.swift */; };
+		0B01D49921CD946500635A91 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B01D49821CD946500635A91 /* SettingsViewController.xib */; };
+		0B01D49B21CF056200635A91 /* SettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D49A21CF056200635A91 /* SettingsProtocol.swift */; };
+		0B01D49D21CF05BD00635A91 /* CarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B01D49C21CF05BD00635A91 /* CarDelegate.swift */; };
+		0BF07AA821D1142B00EA4AC0 /* Fancy_spinner.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA221D1142800EA4AC0 /* Fancy_spinner.gif */; };
+		0BF07AA921D1142B00EA4AC0 /* Fancy_offline_view.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA321D1142800EA4AC0 /* Fancy_offline_view.gif */; };
+		0BF07AAA21D1142B00EA4AC0 /* Fancy_sorting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA421D1142A00EA4AC0 /* Fancy_sorting.gif */; };
+		0BF07AAB21D1142B00EA4AC0 /* Fancy_BuyAvailability.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA521D1142A00EA4AC0 /* Fancy_BuyAvailability.gif */; };
+		0BF07AAC21D1142B00EA4AC0 /* Fancy_infinite_scroll.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA621D1142B00EA4AC0 /* Fancy_infinite_scroll.gif */; };
+		0BF07AAD21D1142B00EA4AC0 /* Fancy_Reachability.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF07AA721D1142B00EA4AC0 /* Fancy_Reachability.gif */; };
+		0BFAF3C421CC801B00B548C8 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAF3C321CC801B00B548C8 /* Car.swift */; };
+		0BFAF3C721CC80D100B548C8 /* cars.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BFAF3C621CC80D100B548C8 /* cars.json */; };
+		0BFAF3C921CC813900B548C8 /* available.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BFAF3C821CC813900B548C8 /* available.json */; };
+		0BFAF3CB21CC831500B548C8 /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAF3CA21CC831500B548C8 /* CarManager.swift */; };
+		27570A3521CC320600A65F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A3421CC320600A65F4B /* AppDelegate.swift */; };
+		27570A3721CC320600A65F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A3621CC320600A65F4B /* ViewController.swift */; };
+		27570A3A21CC320600A65F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27570A3821CC320600A65F4B /* Main.storyboard */; };
+		27570A3C21CC320700A65F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27570A3B21CC320700A65F4B /* Assets.xcassets */; };
+		27570A3F21CC320700A65F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27570A3D21CC320700A65F4B /* LaunchScreen.storyboard */; };
+		27570A4A21CC320700A65F4B /* FancyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A4921CC320700A65F4B /* FancyCarTests.swift */; };
+		27570A5521CC320700A65F4B /* FancyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A5421CC320700A65F4B /* FancyCarUITests.swift */; };
+		27570A6321CC35FD00A65F4B /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A6221CC35FD00A65F4B /* Spinner.swift */; };
+		27570A6521CC3D2F00A65F4B /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A6421CC3D2F00A65F4B /* FancyButton.swift */; };
+		27570A6C21CC446000A65F4B /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A6A21CC446000A65F4B /* CarCell.swift */; };
+		27570A6D21CC446000A65F4B /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27570A6B21CC446000A65F4B /* CarCell.xib */; };
+		27570A7121CC44FD00A65F4B /* FancyImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27570A7021CC44FD00A65F4B /* FancyImgView.swift */; };
+		44F71F70B4E815588ABC6E05 /* Pods_FancyCarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13756B866C206DC18E283891 /* Pods_FancyCarUITests.framework */; };
+		7DA3CF37588A0A2EFA36BA5C /* Pods_FancyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19248E6999400E5D78B383C6 /* Pods_FancyCar.framework */; };
+		F443EC431EA035CD7B8B7AAE /* Pods_FancyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B616AAA7205506BB1D5F0D /* Pods_FancyCarTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27570A4621CC320700A65F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27570A2921CC320600A65F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27570A3021CC320600A65F4B;
+			remoteInfo = FancyCar;
+		};
+		27570A5121CC320700A65F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27570A2921CC320600A65F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27570A3021CC320600A65F4B;
+			remoteInfo = FancyCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B616AAA7205506BB1D5F0D /* Pods_FancyCarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyCarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B01D48C21CD309400635A91 /* RLMCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMCar.swift; sourceTree = "<group>"; };
+		0B01D48E21CD3C4D00635A91 /* FancyAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyAlertController.swift; sourceTree = "<group>"; };
+		0B01D49021CD5E3500635A91 /* splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash.gif; sourceTree = "<group>"; };
+		0B01D49421CD67E100635A91 /* FancyReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyReachability.swift; sourceTree = "<group>"; };
+		0B01D49621CD941300635A91 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0B01D49821CD946500635A91 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		0B01D49A21CF056200635A91 /* SettingsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocol.swift; sourceTree = "<group>"; };
+		0B01D49C21CF05BD00635A91 /* CarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDelegate.swift; sourceTree = "<group>"; };
+		0BF07AA221D1142800EA4AC0 /* Fancy_spinner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_spinner.gif; sourceTree = "<group>"; };
+		0BF07AA321D1142800EA4AC0 /* Fancy_offline_view.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_offline_view.gif; sourceTree = "<group>"; };
+		0BF07AA421D1142A00EA4AC0 /* Fancy_sorting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_sorting.gif; sourceTree = "<group>"; };
+		0BF07AA521D1142A00EA4AC0 /* Fancy_BuyAvailability.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_BuyAvailability.gif; sourceTree = "<group>"; };
+		0BF07AA621D1142B00EA4AC0 /* Fancy_infinite_scroll.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_infinite_scroll.gif; sourceTree = "<group>"; };
+		0BF07AA721D1142B00EA4AC0 /* Fancy_Reachability.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Fancy_Reachability.gif; sourceTree = "<group>"; };
+		0BFAF3C321CC801B00B548C8 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0BFAF3C621CC80D100B548C8 /* cars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cars.json; sourceTree = "<group>"; };
+		0BFAF3C821CC813900B548C8 /* available.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = available.json; sourceTree = "<group>"; };
+		0BFAF3CA21CC831500B548C8 /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
+		0C39E66C93C017519B46C27B /* Pods-FancyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCarUITests/Pods-FancyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13756B866C206DC18E283891 /* Pods_FancyCarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyCarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19248E6999400E5D78B383C6 /* Pods_FancyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27570A3121CC320600A65F4B /* FancyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27570A3421CC320600A65F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27570A3621CC320600A65F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27570A3921CC320600A65F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27570A3B21CC320700A65F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27570A3E21CC320700A65F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27570A4021CC320700A65F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27570A4521CC320700A65F4B /* FancyCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27570A4921CC320700A65F4B /* FancyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCarTests.swift; sourceTree = "<group>"; };
+		27570A4B21CC320700A65F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27570A5021CC320700A65F4B /* FancyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27570A5421CC320700A65F4B /* FancyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCarUITests.swift; sourceTree = "<group>"; };
+		27570A5621CC320700A65F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27570A6221CC35FD00A65F4B /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		27570A6421CC3D2F00A65F4B /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		27570A6A21CC446000A65F4B /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		27570A6B21CC446000A65F4B /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		27570A7021CC44FD00A65F4B /* FancyImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyImgView.swift; sourceTree = "<group>"; };
+		2E1EA86D5C35967312758347 /* Pods-FancyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCarTests/Pods-FancyCarTests.release.xcconfig"; sourceTree = "<group>"; };
+		5728BA893069F02AB882C685 /* Pods-FancyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCar/Pods-FancyCar.release.xcconfig"; sourceTree = "<group>"; };
+		8A663FC10626F67B25503726 /* Pods-FancyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCar/Pods-FancyCar.debug.xcconfig"; sourceTree = "<group>"; };
+		B1E7FC8DBB24DBFDBC39112D /* Pods-FancyCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCarUITests/Pods-FancyCarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC8C7FD72F39AAE369EAED77 /* Pods-FancyCarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyCarTests/Pods-FancyCarTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27570A2E21CC320600A65F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA3CF37588A0A2EFA36BA5C /* Pods_FancyCar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4221CC320700A65F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F443EC431EA035CD7B8B7AAE /* Pods_FancyCarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4D21CC320700A65F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F71F70B4E815588ABC6E05 /* Pods_FancyCarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFAF3C521CC80AF00B548C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BF07AA521D1142A00EA4AC0 /* Fancy_BuyAvailability.gif */,
+				0BF07AA621D1142B00EA4AC0 /* Fancy_infinite_scroll.gif */,
+				0BF07AA321D1142800EA4AC0 /* Fancy_offline_view.gif */,
+				0BF07AA721D1142B00EA4AC0 /* Fancy_Reachability.gif */,
+				0BF07AA421D1142A00EA4AC0 /* Fancy_sorting.gif */,
+				0BF07AA221D1142800EA4AC0 /* Fancy_spinner.gif */,
+				0BFAF3C621CC80D100B548C8 /* cars.json */,
+				0BFAF3C821CC813900B548C8 /* available.json */,
+				0B01D49021CD5E3500635A91 /* splash.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27570A2821CC320600A65F4B = {
+			isa = PBXGroup;
+			children = (
+				27570A3321CC320600A65F4B /* FancyCar */,
+				27570A4821CC320700A65F4B /* FancyCarTests */,
+				27570A5321CC320700A65F4B /* FancyCarUITests */,
+				27570A3221CC320600A65F4B /* Products */,
+				42E42ABDA3D805B5AB843A26 /* Pods */,
+				5A600CC92279059D989CA142 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27570A3221CC320600A65F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27570A3121CC320600A65F4B /* FancyCar.app */,
+				27570A4521CC320700A65F4B /* FancyCarTests.xctest */,
+				27570A5021CC320700A65F4B /* FancyCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27570A3321CC320600A65F4B /* FancyCar */ = {
+			isa = PBXGroup;
+			children = (
+				0BFAF3C521CC80AF00B548C8 /* Resources */,
+				27570A6921CC432C00A65F4B /* Model */,
+				27570A6821CC432000A65F4B /* Delegates */,
+				27570A6721CC431700A65F4B /* Controller */,
+				27570A6621CC42DB00A65F4B /* Views */,
+				27570A3B21CC320700A65F4B /* Assets.xcassets */,
+				27570A4021CC320700A65F4B /* Info.plist */,
+			);
+			path = FancyCar;
+			sourceTree = "<group>";
+		};
+		27570A4821CC320700A65F4B /* FancyCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				27570A4921CC320700A65F4B /* FancyCarTests.swift */,
+				27570A4B21CC320700A65F4B /* Info.plist */,
+			);
+			path = FancyCarTests;
+			sourceTree = "<group>";
+		};
+		27570A5321CC320700A65F4B /* FancyCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27570A5421CC320700A65F4B /* FancyCarUITests.swift */,
+				27570A5621CC320700A65F4B /* Info.plist */,
+			);
+			path = FancyCarUITests;
+			sourceTree = "<group>";
+		};
+		27570A6621CC42DB00A65F4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27570A6F21CC447600A65F4B /* Storyboard */,
+				27570A6221CC35FD00A65F4B /* Spinner.swift */,
+				27570A6421CC3D2F00A65F4B /* FancyButton.swift */,
+				27570A7021CC44FD00A65F4B /* FancyImgView.swift */,
+				27570A6E21CC446B00A65F4B /* Cells */,
+				0B01D49821CD946500635A91 /* SettingsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27570A6721CC431700A65F4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27570A3621CC320600A65F4B /* ViewController.swift */,
+				0B01D48E21CD3C4D00635A91 /* FancyAlertController.swift */,
+				0B01D49621CD941300635A91 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27570A6821CC432000A65F4B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				27570A3421CC320600A65F4B /* AppDelegate.swift */,
+				0B01D49A21CF056200635A91 /* SettingsProtocol.swift */,
+				0B01D49C21CF05BD00635A91 /* CarDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		27570A6921CC432C00A65F4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BFAF3C321CC801B00B548C8 /* Car.swift */,
+				0BFAF3CA21CC831500B548C8 /* CarManager.swift */,
+				0B01D48C21CD309400635A91 /* RLMCar.swift */,
+				0B01D49421CD67E100635A91 /* FancyReachability.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27570A6E21CC446B00A65F4B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				27570A6A21CC446000A65F4B /* CarCell.swift */,
+				27570A6B21CC446000A65F4B /* CarCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27570A6F21CC447600A65F4B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				27570A3821CC320600A65F4B /* Main.storyboard */,
+				27570A3D21CC320700A65F4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		42E42ABDA3D805B5AB843A26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A663FC10626F67B25503726 /* Pods-FancyCar.debug.xcconfig */,
+				5728BA893069F02AB882C685 /* Pods-FancyCar.release.xcconfig */,
+				DC8C7FD72F39AAE369EAED77 /* Pods-FancyCarTests.debug.xcconfig */,
+				2E1EA86D5C35967312758347 /* Pods-FancyCarTests.release.xcconfig */,
+				0C39E66C93C017519B46C27B /* Pods-FancyCarUITests.debug.xcconfig */,
+				B1E7FC8DBB24DBFDBC39112D /* Pods-FancyCarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A600CC92279059D989CA142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19248E6999400E5D78B383C6 /* Pods_FancyCar.framework */,
+				02B616AAA7205506BB1D5F0D /* Pods_FancyCarTests.framework */,
+				13756B866C206DC18E283891 /* Pods_FancyCarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27570A3021CC320600A65F4B /* FancyCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27570A5921CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCar" */;
+			buildPhases = (
+				F91EAD005599CFB5623CCACC /* [CP] Check Pods Manifest.lock */,
+				27570A2D21CC320600A65F4B /* Sources */,
+				27570A2E21CC320600A65F4B /* Frameworks */,
+				27570A2F21CC320600A65F4B /* Resources */,
+				3625471E180428C57BC387FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FancyCar;
+			productName = FancyCar;
+			productReference = 27570A3121CC320600A65F4B /* FancyCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27570A4421CC320700A65F4B /* FancyCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27570A5C21CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCarTests" */;
+			buildPhases = (
+				C51EAB5AD6772E5527D1AA60 /* [CP] Check Pods Manifest.lock */,
+				27570A4121CC320700A65F4B /* Sources */,
+				27570A4221CC320700A65F4B /* Frameworks */,
+				27570A4321CC320700A65F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27570A4721CC320700A65F4B /* PBXTargetDependency */,
+			);
+			name = FancyCarTests;
+			productName = FancyCarTests;
+			productReference = 27570A4521CC320700A65F4B /* FancyCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27570A4F21CC320700A65F4B /* FancyCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27570A5F21CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCarUITests" */;
+			buildPhases = (
+				05EAF2C50F627CC96FDA9C2D /* [CP] Check Pods Manifest.lock */,
+				27570A4C21CC320700A65F4B /* Sources */,
+				27570A4D21CC320700A65F4B /* Frameworks */,
+				27570A4E21CC320700A65F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27570A5221CC320700A65F4B /* PBXTargetDependency */,
+			);
+			name = FancyCarUITests;
+			productName = FancyCarUITests;
+			productReference = 27570A5021CC320700A65F4B /* FancyCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27570A2921CC320600A65F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Keystroke;
+				TargetAttributes = {
+					27570A3021CC320600A65F4B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					27570A4421CC320700A65F4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 27570A3021CC320600A65F4B;
+					};
+					27570A4F21CC320700A65F4B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 27570A3021CC320600A65F4B;
+					};
+				};
+			};
+			buildConfigurationList = 27570A2C21CC320600A65F4B /* Build configuration list for PBXProject "FancyCar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27570A2821CC320600A65F4B;
+			productRefGroup = 27570A3221CC320600A65F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27570A3021CC320600A65F4B /* FancyCar */,
+				27570A4421CC320700A65F4B /* FancyCarTests */,
+				27570A4F21CC320700A65F4B /* FancyCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27570A2F21CC320600A65F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27570A3F21CC320700A65F4B /* LaunchScreen.storyboard in Resources */,
+				0BF07AA821D1142B00EA4AC0 /* Fancy_spinner.gif in Resources */,
+				27570A3C21CC320700A65F4B /* Assets.xcassets in Resources */,
+				0BF07AAC21D1142B00EA4AC0 /* Fancy_infinite_scroll.gif in Resources */,
+				0BFAF3C721CC80D100B548C8 /* cars.json in Resources */,
+				0BF07AAD21D1142B00EA4AC0 /* Fancy_Reachability.gif in Resources */,
+				0B01D49921CD946500635A91 /* SettingsViewController.xib in Resources */,
+				0BFAF3C921CC813900B548C8 /* available.json in Resources */,
+				27570A6D21CC446000A65F4B /* CarCell.xib in Resources */,
+				27570A3A21CC320600A65F4B /* Main.storyboard in Resources */,
+				0BF07AAB21D1142B00EA4AC0 /* Fancy_BuyAvailability.gif in Resources */,
+				0BF07AAA21D1142B00EA4AC0 /* Fancy_sorting.gif in Resources */,
+				0B01D49121CD5E3500635A91 /* splash.gif in Resources */,
+				0BF07AA921D1142B00EA4AC0 /* Fancy_offline_view.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4321CC320700A65F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4E21CC320700A65F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05EAF2C50F627CC96FDA9C2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyCarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3625471E180428C57BC387FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FancyCar/Pods-FancyCar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FancyCar/Pods-FancyCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51EAB5AD6772E5527D1AA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyCarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F91EAD005599CFB5623CCACC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27570A2D21CC320600A65F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27570A3721CC320600A65F4B /* ViewController.swift in Sources */,
+				27570A6521CC3D2F00A65F4B /* FancyButton.swift in Sources */,
+				27570A6321CC35FD00A65F4B /* Spinner.swift in Sources */,
+				27570A6C21CC446000A65F4B /* CarCell.swift in Sources */,
+				0B01D49521CD67E100635A91 /* FancyReachability.swift in Sources */,
+				0B01D48D21CD309400635A91 /* RLMCar.swift in Sources */,
+				0BFAF3CB21CC831500B548C8 /* CarManager.swift in Sources */,
+				0B01D49B21CF056200635A91 /* SettingsProtocol.swift in Sources */,
+				27570A7121CC44FD00A65F4B /* FancyImgView.swift in Sources */,
+				0BFAF3C421CC801B00B548C8 /* Car.swift in Sources */,
+				0B01D48F21CD3C4D00635A91 /* FancyAlertController.swift in Sources */,
+				0B01D49721CD941300635A91 /* SettingsViewController.swift in Sources */,
+				27570A3521CC320600A65F4B /* AppDelegate.swift in Sources */,
+				0B01D49D21CF05BD00635A91 /* CarDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4121CC320700A65F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27570A4A21CC320700A65F4B /* FancyCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27570A4C21CC320700A65F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27570A5521CC320700A65F4B /* FancyCarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27570A4721CC320700A65F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27570A3021CC320600A65F4B /* FancyCar */;
+			targetProxy = 27570A4621CC320700A65F4B /* PBXContainerItemProxy */;
+		};
+		27570A5221CC320700A65F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27570A3021CC320600A65F4B /* FancyCar */;
+			targetProxy = 27570A5121CC320700A65F4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27570A3821CC320600A65F4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27570A3921CC320600A65F4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27570A3D21CC320700A65F4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27570A3E21CC320700A65F4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27570A5721CC320700A65F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27570A5821CC320700A65F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27570A5A21CC320700A65F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A663FC10626F67B25503726 /* Pods-FancyCar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27570A5B21CC320700A65F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5728BA893069F02AB882C685 /* Pods-FancyCar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27570A5D21CC320700A65F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC8C7FD72F39AAE369EAED77 /* Pods-FancyCarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyCar.app/FancyCar";
+			};
+			name = Debug;
+		};
+		27570A5E21CC320700A65F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1EA86D5C35967312758347 /* Pods-FancyCarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FancyCar.app/FancyCar";
+			};
+			name = Release;
+		};
+		27570A6021CC320700A65F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C39E66C93C017519B46C27B /* Pods-FancyCarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FancyCar;
+			};
+			name = Debug;
+		};
+		27570A6121CC320700A65F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E7FC8DBB24DBFDBC39112D /* Pods-FancyCarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FancyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.car.FancyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FancyCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27570A2C21CC320600A65F4B /* Build configuration list for PBXProject "FancyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27570A5721CC320700A65F4B /* Debug */,
+				27570A5821CC320700A65F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27570A5921CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27570A5A21CC320700A65F4B /* Debug */,
+				27570A5B21CC320700A65F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27570A5C21CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27570A5D21CC320700A65F4B /* Debug */,
+				27570A5E21CC320700A65F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27570A5F21CC320700A65F4B /* Build configuration list for PBXNativeTarget "FancyCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27570A6021CC320700A65F4B /* Debug */,
+				27570A6121CC320700A65F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27570A2921CC320600A65F4B /* Project object */;
+}

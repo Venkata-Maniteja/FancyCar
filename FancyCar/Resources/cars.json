@@ -1,0 +1,45 @@
+
+[
+
+    {
+        "id" : "1",
+        "name" : "Red River",
+        "make" : "Toyoto",
+        "year" : "2014",
+        "model" : "Electric",
+        "icon" : "icon_car_red"
+    },
+    {
+        "id" : "2",
+        "name" : "Green River",
+        "make" : "Toyoto",
+        "year" : "2012",
+        "model" : "Electric",
+        "icon" : "icon_car_green"
+    },
+    {
+        "id" : "3",
+        "name" : "Pink River",
+        "make" : "Joe",
+        "year" : "2014",
+        "model" : "Gas",
+        "icon" : "icon_car_pink"
+    },
+    {
+        "id" : "4",
+        "name" : "Purple River",
+        "make" : "Teja",
+        "year" : "2016",
+        "model" : "Gas",
+        "icon" : "icon_car_purple"
+    },
+    {
+        "id" : "5",
+        "name" : "Yellow River",
+        "make" : "Orange",
+        "year" : "2015",
+        "model" : "Electric",
+        "icon" : "icon_car_yellow"
+    }
+
+]

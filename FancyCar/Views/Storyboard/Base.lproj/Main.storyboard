@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VDj-4g-TK7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancyCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLA-5L-fbZ" customClass="Spinner" customModule="FancyCar" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="TCR-le-6ir"/>
+                                    <constraint firstAttribute="height" constant="150" id="VaG-19-dOA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x52-fm-6vo" customClass="FancyButton" customModule="FancyCar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="308.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F2T-uV-SQv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
+                                <state key="normal" title="Download Cars!"/>
+                                <connections>
+                                    <action selector="downloadCarsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJQ-GB-GRt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PYt-ux-SAx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.2121343734196367" green="0.54577345541010258" blue="1" alpha="0.89692451584507038" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.092123490329048319" green="0.33044483399649316" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="PFM-Sk-6QS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pie-mf-vXL"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jRf-HD-Kbh">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="41a-7r-Hxq"/>
+                                    <constraint firstAttribute="height" constant="200" id="a0G-iR-6ci"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x52-fm-6vo" secondAttribute="trailing" constant="20" id="5U5-PH-CQs"/>
+                            <constraint firstItem="PYt-ux-SAx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I0n-dF-FXN"/>
+                            <constraint firstItem="jRf-HD-Kbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I3D-Jx-QbR"/>
+                            <constraint firstItem="PYt-ux-SAx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qp9-7a-SaD"/>
+                            <constraint firstItem="PYt-ux-SAx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1E-eT-qgv"/>
+                            <constraint firstItem="DLA-5L-fbZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VpK-Vj-LkC"/>
+                            <constraint firstItem="DLA-5L-fbZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a63-5J-fKE"/>
+                            <constraint firstItem="x52-fm-6vo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ntG-aY-ENa"/>
+                            <constraint firstItem="jRf-HD-Kbh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rgZ-Nm-fZG"/>
+                            <constraint firstItem="PYt-ux-SAx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tLn-HE-Ga5"/>
+                            <constraint firstItem="x52-fm-6vo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zJz-pr-deD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cars" id="pRh-2U-x9K"/>
+                    <connections>
+                        <outlet property="downLoadBtn" destination="x52-fm-6vo" id="XgD-O2-YbH"/>
+                        <outlet property="listView" destination="PYt-ux-SAx" id="pEm-1A-GYK"/>
+                        <outlet property="spinner" destination="DLA-5L-fbZ" id="Iex-WY-H9k"/>
+                        <outlet property="splashView" destination="jRf-HD-Kbh" id="D2m-jY-mVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="-649.92503748125944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="baC-9M-dQs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDj-4g-TK7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Il1-ac-Cen">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cmJ-cB-erb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnZ-Rg-Ybi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="-671.51424287856082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash.gif" width="96" height="96"/>
+    </resources>
+</document>
