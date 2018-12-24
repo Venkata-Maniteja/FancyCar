@@ -5,10 +5,25 @@ Sample features:
 ![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_infinite_scroll.gif)
 
 
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_BuyAvailability.gif)
+
+
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_offline_view.gif)
+
+
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_sorting.gif)
+
+
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_Reachability.gif)
+
+
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_spinner.gif)
+
+
 
 Documentation:
 
-This app used MVC pattern.
+This app uses MVC pattern.
 
 OnBoarding:
 1. The app has a splash screen.
