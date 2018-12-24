@@ -2,7 +2,7 @@
 
 Sample features:
 
-![Output sample](https://github.com/ajasmin/camstudio-mousedown-highlight/raw/master/android_vid_test.gif)
+![Output sample](https://github.com/Venkata-Maniteja/FancyCar/blob/master/FancyCar/Resources/Fancy_infinite_scroll.gif)
 
 
 
